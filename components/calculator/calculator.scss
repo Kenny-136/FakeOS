@@ -1,0 +1,31 @@
+.calculator{
+  max-width: 300px;
+
+  &__display {
+    background-color: darkgrey;
+    border-radius: 5px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row-reverse;
+    color: white;
+    padding-right: 1rem;
+    height: 2.5rem;
+    align-items: center;
+  }
+  &__keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid black;
+    button {
+      height: 2.5rem;
+    }
+  }
+  .double--width__button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .key__operator, .key__equal {
+    background-color: orange;
+  }
+}
