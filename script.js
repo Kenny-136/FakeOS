@@ -24,3 +24,14 @@ function currentTime() {
 }
 
 currentTime();
+
+const calcIcon = document.querySelector('#calculatorIcon')
+const closeCalcBtn = document.querySelector('.calculator--close__button')
+
+calcIcon.addEventListener('click', () => {
+  calculator.showModal()
+  console.log('hey it works')
+})
+closeCalcBtn.addEventListener('click', () => {
+  calculator.close()
+})

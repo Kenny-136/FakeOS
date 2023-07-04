@@ -6,6 +6,7 @@
   <title>FakeOS Ventura</title>
   <link rel="stylesheet" href="./style.css">
   <script src="./script.js" defer></script>
+  <script src="./components/calculator/calculator.js" defer></script>
 </head>
 <body>
   <header>
@@ -26,12 +27,37 @@
   </header>
   <main>
     <section class="main--container">
-
     </section>
+    <dialog class="calculator">
+      <div class="calculator__display--box">
+        <button class="calculator--close__button">X</button>
+        <div class="calculator__display">0</div>
+      </div>
+      <div class="calculator__keys">
+        <button class="double--width__button" data-action="clear">C</button>
+        <button>%</button>
+        <button class="key__operator" data-action="divide">÷</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="key__operator" data-action="multiply">×</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="key__operator" data-action="substract">-</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="key__operator" data-action="add">+</button>
+        <button class="double--width__button">0</button>
+        <button data-action="decimal">.</button>
+        <button class="key__equal" data-action="calculate">=</button>
+      </div>
+    </dialog>
   </main>
   <footer>
     <section class="footer--container">
-      <img src="./assets/calculator-icon.png" alt="">
+      <img src="./assets/calculator-icon.png" alt="" id="calculatorIcon">
       <img src="./assets/weather-icon.png" alt="">
       <img src="./assets/notes-icon.png" alt="">
     </section>

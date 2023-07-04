@@ -1,8 +1,7 @@
 * {
-  margin: 0;
-  padding: 0;
   list-style-type: none;
 }
+
 body {
   background-image: url(./assets/macos-Ventura-wallpaper-dark.jpeg);
   background-size: cover;
@@ -11,6 +10,9 @@ body {
 }
 
 header {
+  padding: 0;
+  margin: 0;
+  
   section {
     max-height: 3rem;
     background-color: rgb(195, 139, 139, 0.7);
@@ -27,11 +29,13 @@ header {
     img {
       margin-left: 1rem;
       width: 1rem;
+      width: 2.5rem;
     }
     time {
       display: flex;
       flex-direction: row-reverse;
       justify-content: flex-end;
+      padding-right: 1rem;
     }
   }
 }
@@ -51,6 +55,52 @@ footer {
     padding: 0.25rem;
     img{
       width: 4rem;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
+  }
+}
+
+.calculator{
+  width: 300px;
+  padding: 0;
+  border: 1px solid black;
+
+  &--close__button {
+    border: none;
+    background-color: red;
+    position: fixed;
+    border-radius: 5px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  
+  &__display {
+    background-color: darkgrey;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    padding-right: 1rem;
+    height: 2.5rem;
+    align-items: center;
+  }
+  &__keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    button {
+      height: 2.5rem;
+    }
+  }
+  .double--width__button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .key__operator, .key__equal {
+    background-color: orange;
   }
 }

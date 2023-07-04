@@ -1,6 +1,4 @@
 * {
-  margin: 0;
-  padding: 0;
   list-style-type: none;
 }
 
@@ -11,6 +9,10 @@ body {
   font-family: sans-serif;
 }
 
+header {
+  padding: 0;
+  margin: 0;
+}
 header section {
   max-height: 3rem;
   background-color: rgba(195, 139, 139, 0.7);
@@ -28,11 +30,13 @@ header section ul {
 header section img {
   margin-left: 1rem;
   width: 1rem;
+  width: 2.5rem;
 }
 header section time {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
+  padding-right: 1rem;
 }
 
 footer {
@@ -52,6 +56,48 @@ footer section {
 }
 footer section img {
   width: 4rem;
+}
+footer section img:hover {
+  cursor: pointer;
+}
+
+.calculator {
+  width: 300px;
+  padding: 0;
+  border: 1px solid black;
+}
+.calculator--close__button {
+  border: none;
+  background-color: red;
+  position: fixed;
+  border-radius: 5px;
+}
+.calculator--close__button:hover {
+  cursor: pointer;
+}
+.calculator__display {
+  background-color: darkgrey;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  padding-right: 1rem;
+  height: 2.5rem;
+  align-items: center;
+}
+.calculator__keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.calculator__keys button {
+  height: 2.5rem;
+}
+.calculator .double--width__button {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.calculator .key__operator, .calculator .key__equal {
+  background-color: orange;
 }
 
 /*# sourceMappingURL=style.css.map */
