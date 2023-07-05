@@ -11,25 +11,33 @@
   <script src="./components/weather-app/weather.js" defer></script>
 </head>
 <body>
-  <header>
+  <header class="header">
     <section class="header--container">
-      <img src="./assets/apple-icon.png" alt="">
-      <ul>
-        <li>Code</li>
-        <li>File</li>
-        <li>Edit</li>
-        <li>Selection</li>
-        <li>View</li>
-        <li>Go</li>
-        <li>Run</li>
-      </ul>
+      <section class="dropdown">
+        <img src="./assets/apple-icon.png" alt="">
+        <ul class="dropdown-content">
+          <li><button id="aboutDialogBtn">About this App</button></li>
+          <li><button id="creatorDialogBtn">About the Creator</button></li>
+          <li><button>Shut Down</button></li>
+        </ul>
+      </section>
       <time id="time" onload="currentTime()">
       </time>
     </section>
   </header>
   <main>
-    <section class="main--container">
-    </section>
+    <dialog class="about">
+      <button id="closeAboutBtn">X</button>
+      <h1>FakeOs App</h1>
+      <a href="https://github.com/Kenny-136/FakeOS">GitHub Link</a>
+      <small>v1.0, 2023</small>
+    </dialog>
+    <dialog class="creator">
+      <button id="closeCreatorBtn">X</button>
+      <h1>Kenny Kenny</h1>
+      <a href="https://www.linkedin.com/in/dev-kenny/">Connect with me on LinkedIn</a>
+      <a href="https://github.com/Kenny-136">Checkout my GitHub</a>
+    </dialog>
     <dialog class="calculator">
       <div class="calculator__display--box">
         <button class="calculator--close__button">X</button>

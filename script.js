@@ -59,3 +59,25 @@ weatherAppIcon.addEventListener('click', () => {
 closeWeatherAppBtn.addEventListener('click', () => {
   weatherApp.close()
 })
+
+const aboutDialog = document.querySelector('.about')
+const aboutDialogBtn = document.querySelector('#aboutDialogBtn')
+const closeAboutBtn = document.querySelector('#closeAboutBtn')
+
+aboutDialogBtn.addEventListener('click', () => {
+  aboutDialog.showModal()
+})
+closeAboutBtn.addEventListener('click', () => {
+  aboutDialog.close()
+})
+
+const creatorDialog = document.querySelector('.creator')
+const creatorDialogBtn = document.querySelector('#creatorDialogBtn')
+const closeCreatorBtn = document.querySelector('#closeCreatorBtn')
+
+creatorDialogBtn.addEventListener('click', () => {
+  creatorDialog.showModal()
+})
+  closeCreatorBtn.addEventListener('click', () => {
+  creatorDialog.close()
+})
