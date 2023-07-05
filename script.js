@@ -28,10 +28,34 @@ currentTime();
 const calcIcon = document.querySelector('#calculatorIcon')
 const closeCalcBtn = document.querySelector('.calculator--close__button')
 
+const dadJokes = document.querySelector('.dadjokes')
+const dadJokesIcon = document.querySelector('#dadJokesIcon')
+const closeDadJokesBtn = document.querySelector('#closeDadJokesBtn')
+
 calcIcon.addEventListener('click', () => {
   calculator.showModal()
-  console.log('hey it works')
 })
 closeCalcBtn.addEventListener('click', () => {
   calculator.close()
+})
+
+
+dadJokesIcon.addEventListener('click', () => {
+  dadJokes.showModal()
+})
+
+closeDadJokesBtn.addEventListener('click', () => {
+  dadJokes.close()
+})
+
+const weatherApp = document.querySelector('.weather__app')
+const weatherAppIcon = document.querySelector('#weatherAppIcon')
+const closeWeatherAppBtn = document.querySelector('#closeWeatherAppBtn')
+
+weatherAppIcon.addEventListener('click', () => {
+  weatherApp.showModal()
+})
+
+closeWeatherAppBtn.addEventListener('click', () => {
+  weatherApp.close()
 })

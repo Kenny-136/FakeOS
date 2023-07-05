@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="./style.css">
   <script src="./script.js" defer></script>
   <script src="./components/calculator/calculator.js" defer></script>
+  <script src="./components/dadjokes/dadjokes.js" defer></script>
+  <script src="./components/weather-app/weather.js" defer></script>
 </head>
 <body>
   <header>
@@ -54,12 +56,42 @@
         <button class="key__equal" data-action="calculate">=</button>
       </div>
     </dialog>
+    <dialog class="dadjokes">
+      <button id="closeDadJokesBtn">X</button>
+      <header>
+        <img src="../../assets/smile.svg" alt="">
+        <h1>Dad Jokes!</h1>
+        <button id="newJokeBtn">Get a new Joke!</button>
+      </header>
+      <main>
+        <p id="joke">Smile a little bit by pressing this button above!</p>
+      </main>
+      <footer>Jokes & Icon Credit all belongs to <a href="https://icanhazdadjoke.com/about">Brett Langdon</a></footer>
+    </dialog>
+    <dialog class="weather__app">
+      <button id="closeWeatherAppBtn">X</button>
+      <section class="weather__app--display">
+        <h3 id="locationDisplay">City - Country</h3>
+        <h2 id="temperatureDisplay">Temperature</h2>
+        <h3 id="weatherDisplay">Weather</h3>
+        <p id="feelsLikeDisplay">Feels like</p>
+        <p id="humidityDisplay">Humidity</p>
+        <section class="weather__app--display-minmax">
+          <p id="minTempDisplay">Low: </p>
+          <p id="maxTempDisplay">High: </p>
+        </section>
+      </section>
+      <section class="weather__app--input">
+        <input type="text" name="" id="cityInput" placeholder="Type City Name">
+        <button id="weatherInputBtn">Check the Weather on this City!</button>
+      </section>
+    </dialog>
   </main>
   <footer>
     <section class="footer--container">
       <img src="./assets/calculator-icon.png" alt="" id="calculatorIcon">
-      <img src="./assets/weather-icon.png" alt="">
-      <img src="./assets/notes-icon.png" alt="">
+      <img src="./assets/weather-icon.png" alt="" id="weatherAppIcon">
+      <img src="./assets/smile.svg" alt="" id="dadJokesIcon">
     </section>
   </footer>
 </body>

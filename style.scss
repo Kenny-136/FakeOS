@@ -63,6 +63,8 @@ footer {
   }
 }
 
+// Calculator.scss
+
 .calculator{
   width: 300px;
   padding: 0;
@@ -102,5 +104,66 @@ footer {
 
   .key__operator, .key__equal {
     background-color: orange;
+  }
+}
+
+// Dadjokes.scss
+
+.dadjokes {
+  border: 1px solid black;
+  padding: 1rem;
+  background-color: yellow;
+  max-width: 50vw;
+  height: 40vh;
+  header{
+    display: flex;
+    align-items: center;
+    * {
+      margin: 1rem;
+    }
+    img {
+      width: 10%;
+    }
+    button {
+      height: 2rem;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  main {
+    p {
+      font-weight: 700;
+      font-size: 30px;
+    }
+  }
+  footer {
+    font-size: 12px;
+    a {
+      text-decoration: underline;
+
+      &:visited {
+        color: black;
+      }
+    }
+  }
+}
+
+// Weather.scss
+.weather__app {
+  background-color: lightblue;
+  border: 1px solid black;
+  &--display{
+
+    &-minmax {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+    }
+  }
+  &--input {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
   }
 }

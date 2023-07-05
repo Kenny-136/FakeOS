@@ -44,5 +44,5 @@ weatherInputBtn.addEventListener('click', () => {
     getWeather(lat, lon).then(data => {
       parseDataIntoDisplay(data)
     })
-  }).catch(err => locationDisplay.innerHTML = err)
+  }).catch(err => locationDisplay.innerHTML = `${err} please submit a correct City name.`)
 })
