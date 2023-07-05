@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./weather.js" defer></script>
+  <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+  <section class="weather__app">
+    <section class="weather__app--display">
+      <h3 id="locationDisplay">City - Country</h3>
+      <h2 id="temperatureDisplay">Temperature</h2>
+      <h3 id="weatherDisplay">Weather</h3>
+      <p id="feelsLikeDisplay">Feels like</p>
+      <p id="humidityDisplay">Humidity</p>
+      <section class="weather__app--display-minmax">
+        <p id="minTempDisplay">Low: </p>
+        <p id="maxTempDisplay">High: </p>
+      </section>
+    </section>
+    <section class="weather__app--input">
+      <input type="text" name="" id="cityInput" placeholder="Type City Name">
+      <button id="weatherInputBtn">Check the Weather on this City!</button>
+    </section>
+  </section>
+</body>
+</html>

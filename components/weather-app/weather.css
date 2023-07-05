@@ -1,0 +1,18 @@
+.weather__app {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.weather__app--display-minmax {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.weather__app--input {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+/*# sourceMappingURL=weather.css.map */
