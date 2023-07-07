@@ -27,27 +27,26 @@
   </header>
   <main>
     <dialog class="about">
-      <button id="closeAboutBtn">X</button>
+      <button id="closeAboutBtn" class="close__button">X</button>
       <h1>FakeOs App</h1>
-      <a href="https://github.com/Kenny-136/FakeOS">GitHub Link</a>
+      <a href="https://github.com/Kenny-136/FakeOS" target="_blank">GitHub Link</a>
       <small>v1.0, 2023</small>
     </dialog>
-    <dialog class="creator">
-      <button id="closeCreatorBtn">X</button>
+    <dialog class="creator about">
+      <button id="closeCreatorBtn" class="close__button">X</button>
       <h1>Kenny Kenny</h1>
       <div>
-        <a href="https://www.linkedin.com/in/dev-kenny/">Connect with me on LinkedIn</a>
-        <a href="https://github.com/Kenny-136">Checkout my GitHub</a>
+        <a href="https://www.linkedin.com/in/dev-kenny/" target="_blank">Connect with me on LinkedIn</a>
+        <a href="https://github.com/Kenny-136" target="_blank">Checkout my GitHub</a>
       </div>
     </dialog>
     <dialog class="calculator">
       <div class="calculator__display--box">
-        <button class="calculator--close__button">X</button>
+        <button class="close__button calculator--close__button">X</button>
         <div class="calculator__display">0</div>
       </div>
       <div class="calculator__keys">
-        <button class="double--width__button" data-action="clear">C</button>
-        <button>%</button>
+        <button class="three--width__button" data-action="clear">C</button>
         <button class="key__operator" data-action="divide">÷</button>
         <button>7</button>
         <button>8</button>
@@ -67,7 +66,7 @@
       </div>
     </dialog>
     <dialog class="dadjokes">
-      <button id="closeDadJokesBtn">X</button>
+      <button id="closeDadJokesBtn" class="close__button">X</button>
       <header>
         <img src="../../assets/smile.svg" alt="">
         <h1>Dad Jokes!</h1>
@@ -76,10 +75,10 @@
       <main>
         <p id="joke">Smile a little bit by pressing this button above!</p>
       </main>
-      <footer>Jokes & Icon Credit all belongs to <a href="https://icanhazdadjoke.com/about">Brett Langdon</a></footer>
+      <div class="dadjokes--footer">Jokes & Icon Credit all belongs to <a href="https://icanhazdadjoke.com/about">Brett Langdon</a></div>
     </dialog>
     <dialog class="weather__app">
-      <button id="closeWeatherAppBtn">X</button>
+      <button id="closeWeatherAppBtn" class="close__button">X</button>
       <section class="weather__app--display">
         <h3 id="locationDisplay">City - Country</h3>
         <h2 id="temperatureDisplay">Temperature</h2>
