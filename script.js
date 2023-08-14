@@ -24,3 +24,60 @@ function currentTime() {
 }
 
 currentTime();
+
+const calcIcon = document.querySelector('#calculatorIcon')
+const closeCalcBtn = document.querySelector('.calculator--close__button')
+
+const dadJokes = document.querySelector('.dadjokes')
+const dadJokesIcon = document.querySelector('#dadJokesIcon')
+const closeDadJokesBtn = document.querySelector('#closeDadJokesBtn')
+
+calcIcon.addEventListener('click', () => {
+  calculator.showModal()
+})
+closeCalcBtn.addEventListener('click', () => {
+  calculator.close()
+})
+
+
+dadJokesIcon.addEventListener('click', () => {
+  dadJokes.showModal()
+})
+
+closeDadJokesBtn.addEventListener('click', () => {
+  dadJokes.close()
+})
+
+const weatherApp = document.querySelector('.weather__app')
+const weatherAppIcon = document.querySelector('#weatherAppIcon')
+const closeWeatherAppBtn = document.querySelector('#closeWeatherAppBtn')
+
+weatherAppIcon.addEventListener('click', () => {
+  weatherApp.showModal()
+})
+
+closeWeatherAppBtn.addEventListener('click', () => {
+  weatherApp.close()
+})
+
+const aboutDialog = document.querySelector('.about')
+const aboutDialogBtn = document.querySelector('#aboutDialogBtn')
+const closeAboutBtn = document.querySelector('#closeAboutBtn')
+
+aboutDialogBtn.addEventListener('click', () => {
+  aboutDialog.showModal()
+})
+closeAboutBtn.addEventListener('click', () => {
+  aboutDialog.close()
+})
+
+const creatorDialog = document.querySelector('.creator')
+const creatorDialogBtn = document.querySelector('#creatorDialogBtn')
+const closeCreatorBtn = document.querySelector('#closeCreatorBtn')
+
+creatorDialogBtn.addEventListener('click', () => {
+  creatorDialog.showModal()
+})
+  closeCreatorBtn.addEventListener('click', () => {
+  creatorDialog.close()
+})

@@ -1,6 +1,4 @@
 * {
-  margin: 0;
-  padding: 0;
   list-style-type: none;
 }
 
@@ -9,30 +7,58 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   font-family: sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
-header section {
+.header {
+  background-color: #1b2463;
+  margin: 0;
+  color: white;
+}
+.header--container {
   max-height: 3rem;
-  background-color: rgba(195, 139, 139, 0.7);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-header section ul {
-  display: flex;
-  flex-direction: row;
-  margin-left: 1rem;
-  gap: 1rem;
+.header--container .dropdown {
+  position: relative;
+  display: inline-block;
 }
-header section img {
+.header--container .dropdown-content {
+  margin: 0;
+  display: none;
+  position: absolute;
+  background-color: #1b2463;
+  padding-left: 0;
+  padding-right: 0;
+  width: 8rem;
+  z-index: 1;
+  border: 2px solid black;
+}
+.header--container .dropdown-content button {
+  border: none;
+  cursor: pointer;
+  padding-left: 0.5rem;
+  margin-right: 0;
+  border-bottom: 2px solid black;
+  background-color: lightgray;
+}
+.header--container .dropdown:hover .dropdown-content {
+  display: block;
+}
+.header--container img {
   margin-left: 1rem;
   width: 1rem;
+  width: 2.5rem;
 }
-header section time {
+.header--container time {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
+  padding-right: 1rem;
 }
 
 footer {
@@ -52,6 +78,126 @@ footer section {
 }
 footer section img {
   width: 4rem;
+}
+footer section img:hover {
+  cursor: pointer;
+}
+
+.about {
+  background-color: #1b2463;
+  color: white;
+}
+.about a:visited {
+  color: white;
+  text-decoration: underline;
+}
+
+.calculator {
+  width: 300px;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.calculator__display {
+  background-color: darkgrey;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  padding-right: 1rem;
+  height: 2.5rem;
+  align-items: center;
+  font-size: larger;
+}
+.calculator__keys {
+  display: grid;
+  font-size: x-large;
+  grid-template-columns: repeat(4, 1fr);
+}
+.calculator__keys button {
+  height: 2.5rem;
+}
+.calculator .double--width__button {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.calculator .three--width__button {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.calculator .key__operator, .calculator .key__equal {
+  background-color: orange;
+}
+
+.dadjokes {
+  border: 1px solid black;
+  padding: 1rem;
+  background-color: yellow;
+  max-width: 60vw;
+  height: 40vh;
+}
+.dadjokes--footer {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.dadjokes header {
+  display: flex;
+  align-items: center;
+}
+.dadjokes header * {
+  margin: 1rem;
+}
+.dadjokes header img {
+  width: 10%;
+}
+.dadjokes header button {
+  height: 2rem;
+}
+.dadjokes header button:hover {
+  cursor: pointer;
+}
+.dadjokes main p {
+  font-weight: 700;
+  font-size: 24px;
+}
+.dadjokes footer {
+  font-size: 12px;
+}
+.dadjokes footer a {
+  text-decoration: underline;
+}
+.dadjokes footer a:visited {
+  color: black;
+}
+
+.weather__app {
+  background-color: lightblue;
+  border: 1px solid black;
+}
+.weather__app--display-minmax {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.weather__app--input {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.creator div {
+  display: flex;
+  flex-direction: column;
+}
+
+.close__button {
+  border: none;
+  background-color: red;
+  position: fixed;
+  border-radius: 15px;
+}
+.close__button:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

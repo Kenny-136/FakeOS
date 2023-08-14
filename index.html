@@ -6,34 +6,101 @@
   <title>FakeOS Ventura</title>
   <link rel="stylesheet" href="./style.css">
   <script src="./script.js" defer></script>
+  <script src="./components/calculator/calculator.js" defer></script>
+  <script src="./components/dadjokes/dadjokes.js" defer></script>
+  <script src="./components/weather-app/weather.js" defer></script>
 </head>
 <body>
-  <header>
+  <header class="header">
     <section class="header--container">
-      <img src="./assets/apple-icon.png" alt="">
-      <ul>
-        <li>Code</li>
-        <li>File</li>
-        <li>Edit</li>
-        <li>Selection</li>
-        <li>View</li>
-        <li>Go</li>
-        <li>Run</li>
-      </ul>
+      <section class="dropdown">
+        <img src="./assets/apple-icon.png" alt="">
+        <ul class="dropdown-content">
+          <li><button id="aboutDialogBtn">About this App</button></li>
+          <li><button id="creatorDialogBtn">About the Creator</button></li>
+          <li><button>Shut Down</button></li>
+        </ul>
+      </section>
       <time id="time" onload="currentTime()">
       </time>
     </section>
   </header>
   <main>
-    <section class="main--container">
-
-    </section>
+    <dialog class="about">
+      <button id="closeAboutBtn" class="close__button">X</button>
+      <h1>FakeOs App</h1>
+      <a href="https://github.com/Kenny-136/FakeOS" target="_blank">GitHub Link</a>
+      <small>v1.0, 2023</small>
+    </dialog>
+    <dialog class="creator about">
+      <button id="closeCreatorBtn" class="close__button">X</button>
+      <h1>Kenny Kenny</h1>
+      <div>
+        <a href="https://www.linkedin.com/in/dev-kenny/" target="_blank">Connect with me on LinkedIn</a>
+        <a href="https://github.com/Kenny-136" target="_blank">Checkout my GitHub</a>
+      </div>
+    </dialog>
+    <dialog class="calculator">
+      <div class="calculator__display--box">
+        <button class="close__button calculator--close__button">X</button>
+        <div class="calculator__display">0</div>
+      </div>
+      <div class="calculator__keys">
+        <button class="three--width__button" data-action="clear">C</button>
+        <button class="key__operator" data-action="divide">÷</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="key__operator" data-action="multiply">×</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="key__operator" data-action="substract">-</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="key__operator" data-action="add">+</button>
+        <button class="double--width__button">0</button>
+        <button data-action="decimal">.</button>
+        <button class="key__equal" data-action="calculate">=</button>
+      </div>
+    </dialog>
+    <dialog class="dadjokes">
+      <button id="closeDadJokesBtn" class="close__button">X</button>
+      <header>
+        <img src="../../assets/smile.svg" alt="">
+        <h1>Dad Jokes!</h1>
+        <button id="newJokeBtn">Get a new Joke!</button>
+      </header>
+      <main>
+        <p id="joke">Smile a little bit by pressing this button above!</p>
+      </main>
+      <div class="dadjokes--footer">Jokes & Icon Credit all belongs to <a href="https://icanhazdadjoke.com/about">Brett Langdon</a></div>
+    </dialog>
+    <dialog class="weather__app">
+      <button id="closeWeatherAppBtn" class="close__button">X</button>
+      <section class="weather__app--display">
+        <h3 id="locationDisplay">City - Country</h3>
+        <h2 id="temperatureDisplay">Temperature</h2>
+        <h3 id="weatherDisplay">Weather</h3>
+        <p id="feelsLikeDisplay">Feels like</p>
+        <p id="humidityDisplay">Humidity</p>
+        <section class="weather__app--display-minmax">
+          <p id="minTempDisplay">Low: </p>
+          <p id="maxTempDisplay">High: </p>
+        </section>
+      </section>
+      <section class="weather__app--input">
+        <input type="text" name="" id="cityInput" placeholder="Type City Name">
+        <button id="weatherInputBtn">Check the Weather on this City!</button>
+      </section>
+    </dialog>
   </main>
   <footer>
     <section class="footer--container">
-      <img src="./assets/calculator-icon.png" alt="">
-      <img src="./assets/weather-icon.png" alt="">
-      <img src="./assets/notes-icon.png" alt="">
+      <img src="./assets/calculator-icon.png" alt="" id="calculatorIcon">
+      <img src="./assets/weather-icon.png" alt="" id="weatherAppIcon">
+      <img src="./assets/smile.svg" alt="" id="dadJokesIcon">
     </section>
   </footer>
 </body>

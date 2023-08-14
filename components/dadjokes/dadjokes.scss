@@ -1,0 +1,38 @@
+.dadjokes {
+  border: 1px solid black;
+  padding: 1rem;
+  background-color: yellow;
+  header{
+    display: flex;
+    align-items: center;
+    * {
+      margin: 1rem;
+    }
+    img {
+      width: 10%;
+    }
+    button {
+      height: 2rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  main {
+    p {
+      font-weight: 700;
+      font-size: 36px;
+    }
+  }
+  footer {
+    font-size: 12px;
+    a {
+      text-decoration: underline;
+
+      &:visited {
+        color: black;
+      }
+    }
+  }
+}
