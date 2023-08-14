@@ -1,7 +1,7 @@
 const apiKey = '8c3b436dd356883d3bb13730382b0a82'
 
 const getLocation = async (city) => {
-  const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`)
+  const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`)
   const data = await response.json()
   if (data.length > 0) {
     console.log(data)
