@@ -4,7 +4,6 @@ const getLocation = async (city) => {
   const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`)
   const data = await response.json()
   if (data.length > 0) {
-    console.log(data)
     return data
   } else {
     throw 'Invalid City Name'
